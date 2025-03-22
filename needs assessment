@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Program Needs Assessment</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 0; background-color: #f4f4f4; }
+    h1, h2 { color: #2c3e50; }
+    form { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }
+    .section { margin-top: 30px; }
+    .submit-btn { margin-top: 20px; padding: 10px 20px; background-color: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .submit-btn:hover { background-color: #219150; }
+  </style>
+</head>
+<body>
+  <h1>Fitness Program Needs Assessment</h1>
+
+  <!-- Form 1: Intake & Health History -->
+  <form>
+    <h2>Participant Intake & Health History</h2>
+    <label>Name:</label><input type="text" name="name">
+    <label>Date:</label><input type="date" name="date">
+    <label>Email/Phone:</label><input type="text" name="contact">
+    <label>Age:</label><input type="number" name="age">
+    <label>Gender:</label>
+    <select name="gender">
+      <option>Male</option><option>Female</option><option>Other</option>
+    </select>
+    <label>Height:</label><input type="text" name="height">
+    <label>Weight:</label><input type="text" name="weight">
+    <label>Emergency Contact:</label><input type="text" name="emergency_contact">
+
+    <label>Medical History (check all that apply):</label>
+    <textarea placeholder="e.g., Asthma, Diabetes, Surgery, etc."></textarea>
+    <label>Current Medications:</label><input type="text" name="medications">
+    <label>Has a doctor advised against physical activity?</label>
+    <select><option>Yes</option><option>No</option></select>
+    <label>If yes, explain:</label><textarea></textarea>
+  </form>
+
+  <!-- Form 2: Fitness & Lifestyle Survey -->
+  <form>
+    <h2>Fitness & Lifestyle Survey</h2>
+    <label>Fitness Level:</label>
+    <select><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+    <label>Activity Frequency per Week:</label>
+    <select><option>0</option><option>1-2</option><option>3-4</option><option>5+</option></select>
+    <label>Current Activities:</label><textarea></textarea>
+    <label>Fitness Goals:</label><textarea></textarea>
+    <label>Preferred Time to Exercise:</label>
+    <select><option>Morning</option><option>Midday</option><option>Evening</option><option>No preference</option></select>
+    <label>Barriers to Exercise:</label><textarea></textarea>
+  </form>
+
+  <!-- Form 3: Fitness Assessment Log -->
+  <form>
+    <h2>Physical Fitness Assessment Log</h2>
+    <label>1-Mile Run/Walk (min:sec):</label><input type="text">
+    <label>Push-Ups (max reps):</label><input type="text">
+    <label>Sit-and-Reach (cm/in):</label><input type="text">
+    <label>Body Weight (lbs/kg):</label><input type="text">
+    <label>Body Fat % (if known):</label><input type="text">
+  </form>
+
+  <!-- Form 4: Program Feedback & Evaluation -->
+  <form>
+    <h2>Program Feedback & Evaluation</h2>
+    <label>Satisfaction Level:</label>
+    <select>
+      <option>Very satisfied</option><option>Satisfied</option>
+      <option>Neutral</option><option>Dissatisfied</option><option>Very dissatisfied</option>
+    </select>
+    <label>Most Helpful Aspects:</label><textarea></textarea>
+    <label>Suggestions for Improvement:</label><textarea></textarea>
+    <label>Have you noticed improvements in energy, strength, mood, or flexibility?</label><textarea></textarea>
+    <label>Additional Comments:</label><textarea></textarea>
+    <button class="submit-btn" type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
